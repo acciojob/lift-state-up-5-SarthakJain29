@@ -10,11 +10,11 @@ function LoginForm({isLoggedIn, onLogin}){
     }
     return (
         <form onSubmit = {handleSubmit}>
-            <label for="username">Username</label>
-            <input type="text"/>
+            <label htmlFor="username">Username</label>
+            <input id="username" type="text"/>
             <br></br>
-            <label for="password">Password</label>
-            <input type="password"/>
+            <label htmlFor="password">Password</label>
+            <input is="password" type="password"/>
             <br></br>
             <button type="submit">Login</button>
         </form>
